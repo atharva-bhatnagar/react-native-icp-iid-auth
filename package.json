@@ -1,0 +1,36 @@
+{
+  "name": "react-native-icp-iid-auth",
+  "version": "1.0.0",
+  "description": "A helper package for developers to easily authenticate using internet identity in their react native apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atharva-bhatnagar/react-native-icp-iid-auth.git"
+  },
+  "keywords": [
+    "icp",
+    "react",
+    "native",
+    "internet",
+    "identity"
+  ],
+  "author": "Atharav Bhatnagar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atharva-bhatnagar/react-native-icp-iid-auth/issues"
+  },
+  "homepage": "https://github.com/atharva-bhatnagar/react-native-icp-iid-auth#readme",
+  "peerDependencies": {
+    "react": "18.2.0",
+    "react-native": "0.72.7",
+    "buffer": "6.0.3",
+    "crypto": "^1.0.1",
+    "@dfinity/agent": "^0.18.1",
+    "@dfinity/identity": "^0.20.2",
+    "@react-native-async-storage/async-storage": "^1.23.1",
+    "react-native-inappbrowser-reborn": "^3.7.0"
+  }
+}
