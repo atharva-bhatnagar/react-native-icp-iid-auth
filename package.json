@@ -30,6 +30,8 @@
     "crypto": "^1.0.1",
     "@dfinity/agent": "^0.18.1",
     "@dfinity/identity": "^0.20.2",
+    "@dfinity/candid": "^0.20.1",
+    "@dfinity/principal": "^0.20.1",
     "@react-native-async-storage/async-storage": "^1.23.1",
     "react-native-inappbrowser-reborn": "^3.7.0"
   }
