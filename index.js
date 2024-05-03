@@ -1,2 +1,2 @@
-import { handleLogin } from "./utils";
-export {handleLogin} from './utils'
+import { handleLogin ,handleLogout,autoLogin} from "./utils";
+export {handleLogin,handleLogout,autoLogin} from './utils'
