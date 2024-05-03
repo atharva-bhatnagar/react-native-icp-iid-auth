@@ -157,7 +157,7 @@ async function handleDeepLink(event,canisters,environment){
       storeInAsyncStorage("prikey",priKey)
       storeInAsyncStorage("delegation",delegation)
       return {
-        principle:principle,
+        principal:principle,
         actors:[...actorArr]
       }
 
@@ -260,7 +260,7 @@ export async function autoLogin(environment,canisters){
         }
         let principle=await actor.whoami()
         return {
-          principle:principle,
+          principal:principle,
           actors:[...actorArr],
           found:true
         }
