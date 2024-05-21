@@ -1,4 +1,4 @@
-# react-native-icp-iid-auth
+# react-native-icp-auth
 
 A helper package for react native developers to authenticate using internet identity
 
@@ -47,7 +47,7 @@ const RootComponent: React.FC = () => {
 
    {
       principal:"contains principal of the user",
-      actors:[array of actors bound with IID]
+      actors:[array of actors bound with Internte Identity]
    }
 
 ```
@@ -57,7 +57,7 @@ const RootComponent: React.FC = () => {
   
 ```javascript
 const environment={
-    // if isTesting is true environment will be set to local , otherwise mainnet IID provider will be used, should be true only if dealing with the mainnet canisters
+    // if isTesting is true environment will be set to local , otherwise mainnet Internet Identity provider will be used, should be true only if dealing with the mainnet canisters
     isTesting:true,
 
     //these 3 are only applicable if isTesting is true, i.e. these are optional and should be used only when using the package to interact with local canisters
@@ -78,7 +78,7 @@ const environment={
 **Canisters :**
 
   ```javascript
-// array containing info about all the canisters developer needs to bind with the IID after authentication.
+// array containing info about all the canisters developer needs to bind with the Internet Identity after authentication.
 
 //idl factories can be imported from in src/declarations/<canister-name>/<canister-name>.did.js
 import {idlFactory} from '../../src/declarations/backend/backend.did.js'
@@ -104,13 +104,13 @@ const canisters=[
 
 ```
 
-**2. autoLogin :** Should be placed inside the useeffect hook of the initialRoute. This function scans if any previous IID authenticated data is stored locally and if any previous data is found, it automatically authenticates the user. for takes 2 arguments **environment** and **canisters** which are same as described for the handleLogin function.Consoles err if something went wrong, Return type of this function resembles this object :
+**2. autoLogin :** Should be placed inside the useeffect hook of the initialRoute. This function scans if any previous Internet Identity authenticated data is stored locally and if any previous data is found, it automatically authenticates the user. for takes 2 arguments **environment** and **canisters** which are same as described for the handleLogin function.Consoles err if something went wrong, Return type of this function resembles this object :
 ```javascript
 // Response If previous data is found : 
 {
  found:true,
  principal:"user's principal",
- actors:[array of IID bound actors]
+ actors:[array of Internet Identity bound actors]
 }
 
 // Response If no data found : 
@@ -120,7 +120,7 @@ const canisters=[
 }
 ```
 
-**3. handleLogout :** Takes no parameters and returns nothing. Clears the data stored locally on mobile related to IID authentication and reload the app in order to prevent any agent state clashed resulting in unnecessary errrors and warnings. 
+**3. handleLogout :** Takes no parameters and returns nothing. Clears the data stored locally on mobile related to Internet Identity authentication and reload the app in order to prevent any agent state clashed resulting in unnecessary errrors and warnings. 
 
 ### Example usage for local canisters :
 
