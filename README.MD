@@ -5,7 +5,7 @@ A helper package for react native developers to authenticate using internet iden
 ## Installation
 
 ```bash
-npm i --force react-native-icp-iid-auth
+npm i --force react-native-icp-auth
 ```
 
 ## Peer dependency [polyfills](https://www.npmjs.com/search?q=react-native-webview-crypto)
