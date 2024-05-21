@@ -1,6 +1,6 @@
 {
   "name": "react-native-icp-auth",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A helper package for developers to easily authenticate using internet identity in their react native apps",
   "main": "index.js",
   "scripts": {
